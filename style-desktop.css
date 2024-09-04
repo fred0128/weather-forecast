@@ -1,0 +1,36 @@
+.cont-right {
+    width: 30%;
+    height: 100%;
+    padding: 20px 30px;
+    background-color: #00000010;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#info-div {
+    position: absolute;
+    top: 20px;
+    background-color: #000000d3;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #fff;
+    width: fit-content;
+    padding: 20px;
+    z-index: 99;
+    border-radius: 20px;
+    max-width: 500px;
+    border: 1px solid #ccc;
+}
+
+.search-btn {
+    border: none;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mobile.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <div id="weather-info"></div>
+    
+    <p class="info-div">
+        Weather Info <span> Mobile</span>
+    </p>
+
+    <div id="info-div" style="display: none;"></div>
+
+    <div class="opshi">
+        <div class="cont-left">
+            <div class="search-box">
+                <div class="sb-top" id="sb-top">
+                    <input type="text" id="city-input" placeholder="Enter city" autocomplete="off" />
+                    <button class="search-btn" onclick="searchCity()">Search</button>
+                </div>
+                <div class="sb-bpttom">
+                    <ul id="search-list"></ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="cont-sml-l">
+                    <div class="cont-item">
+                        <div id="weather-temperature"></div>
+                        <img id="weather-icon" alt="Weather Icon" />
+                    </div>
+                    <div class="cont-item-loc">
+                        <div id="weather-location"></div>
+                        <div class="date-info">
+                            <div id="clock"></div>
+                            <p> - </p>
+                            <div id="date"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="weather-description"></div>
+            </div>
+        </div>
+
+        <div class="cont-right">
+            <div class="details">
+                <div class="line"></div>
+                <h4>Weather details</h4>
+                <div id="weather-humidity"></div>
+                <div id="weather-wind-speed"></div>
+                <div id="weather-cloudiness"></div>
+                <div id="weather-rain"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
